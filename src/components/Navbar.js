@@ -8,20 +8,20 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav class='navbar'>
+      <nav className='navbar'>
         <div className='nav-center'>
           <div className='nav-header'>
             <Link to='/' className='nav-logo'>
               TRAVEL<span>R</span>
-              <i class='fa-solid fa-splotch'></i>
+              <i className='fa-solid fa-splotch'></i>
             </Link>
             {isLinkOpen ? (
-              <button class='nav-close' onClick={handleClick}>
-                <i class='fa-solid fa-xmark'></i>
+              <button className='nav-close' onClick={handleClick}>
+                <i className='fa-solid fa-xmark'></i>
               </button>
             ) : (
-              <button class='nav-toggle' onClick={handleClick}>
-                <i class='fa-solid fa-bars'></i>
+              <button className='nav-toggle' onClick={handleClick}>
+                <i className='fa-solid fa-bars'></i>
               </button>
             )}
           </div>

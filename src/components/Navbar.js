@@ -8,8 +8,8 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav class='navbar '>
-        <div className='nav-center section'>
+      <nav class='navbar'>
+        <div className='nav-center'>
           <div className='nav-header'>
             <Link to='/' className='nav-logo'>
               TRAVEL<span>R</span>
@@ -26,17 +26,30 @@ const Navbar = () => {
             )}
           </div>
           <ul className={`links ${isLinkOpen ? 'show-links' : ''}`}>
-            <li>
-              <Link to=''>Home</Link>
+            <li className='nav-item'>
+              <Link to='' className='nav-item-link'>
+                Home
+              </Link>
             </li>
-            <li>
-              <Link to=''>Offers</Link>
+            <li className='nav-item'>
+              <Link to='' className='nav-item-link'>
+                Offers
+              </Link>
             </li>
-            <li>
-              <Link to=''>Packages</Link>
+            <li className='nav-item'>
+              <Link to='' className='nav-item-link'>
+                Packages
+              </Link>
             </li>
-            <li>
-              <Link to=''>About Us</Link>
+            <li className='nav-item'>
+              <Link to='' className='nav-item-link'>
+                About Us
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='' className='nav-item-link'>
+                Sign Up
+              </Link>
             </li>
           </ul>
         </div>

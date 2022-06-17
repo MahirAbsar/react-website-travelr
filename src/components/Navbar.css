@@ -1,5 +1,8 @@
 .navbar {
-  background-color: black;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .nav-header {
   padding: 1rem;
@@ -7,45 +10,94 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .nav-logo {
-  color: white;
-  letter-spacing: 2px;
+  color: #fff;
 }
 .nav-logo span {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .nav-logo i {
   margin-left: 10px;
 }
 .nav-toggle,
 .nav-close {
-  color: white;
-  font-size: 1.5rem;
   border: none;
+  font-size: 2rem;
   background: transparent;
-  cursor: pointer;
+  color: #fff;
 }
 .links {
+  /* padding: 1rem; */
   height: 0;
   overflow: hidden;
-  transition: all 0.5s linear;
-}
-.links a {
-  display: block;
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: white;
-  padding: 0.25rem 0.5rem;
   text-align: center;
-  transition: all 0.5s linear;
+  font-size: 1.5rem;
+  /* padding-bottom: 0.5rem; */
+  transform: translate(-100%);
+  transition: all 0.3s linear;
 }
-.links a:hover {
-  box-sizing: border-box;
-  padding-left: 1.5rem;
+.nav-item {
+  height: 60px;
+  /* padding: 1rem; */
+}
+.nav-item-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  border: 2px solid grey;
+  transition: all 0.3s linear;
+}
+.nav-item-link:hover {
+  background: white;
+  color: black;
+}
+.nav-item:last-child {
+  width: 400px;
+  border-radius: 3px;
+  margin: 10px auto 0 auto;
+  border: 2px solid white;
 }
 .show-links {
-  height: 196px;
+  transform: translate(0);
+  height: 332px;
+}
+
+@media screen and (min-width: 800px) {
+  .links {
+    height: auto;
+    overflow: none;
+    display: flex;
+    /* text-align: left; */
+    gap: 0 20px;
+    transform: translate(0);
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .nav-toggle,
+  .nav-close {
+    display: none;
+  }
+  .nav-item {
+    height: auto;
+  }
+  .nav-item-link {
+    display: inline;
+  }
+  .nav-item:last-child {
+    width: fit-content;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+  }
+  .nav-item-link:hover {
+    background: none;
+    color: white;
+  }
 }

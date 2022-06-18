@@ -63,7 +63,7 @@
   height: 260px;
 }
 
-.nav-header i {
+.nav-header .fa-splotch {
   font-size: 2rem;
   animation: rotate 2s linear infinite;
 }

@@ -11,33 +11,33 @@ function Card() {
           label='Adventure'
           path='/services'
           src='/images/img-1.jpg'
-          type='Explore The Amazing Vistas of this mountain'
+          type='Explore The Amazing Scenery of this mountain'
         />
         <CardItem
-          label='Adventure'
+          label='Luxury'
           path='/services'
           src='/images/img-2.jpg'
-          type='Explore The Amazing Vistas of this mountain'
+          type='Explore The Amazing Vistas of this beach'
         />
       </div>
       <div className='three-columns'>
         <CardItem
-          label='Adventure'
+          label='Chilling'
           path='/services'
           src='/images/img-3.jpg'
-          type='Explore The Amazing Vistas of this mountain'
+          type='Explore The Amazing Vistas of this ocean'
         />
         <CardItem
-          label='Adventure'
+          label='Peaceful'
           path='/services'
           src='/images/img-4.jpg'
-          type='Explore The Amazing Vistas of this mountain'
+          type='Explore The Amazing Vistas of this island'
         />
         <CardItem
-          label='Adventure'
+          label='Mountain'
           path='/services'
           src='/images/img-5.jpg'
-          type='Explore The Amazing Vistas of this mountain'
+          type='Explore The Amazing Vistas of this street'
         />
       </div>
     </section>

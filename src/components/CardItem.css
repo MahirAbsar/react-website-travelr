@@ -1,0 +1,59 @@
+.single-card {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  /* padding: 10px; */
+  /* background: blue; */
+  border: none;
+  border-radius: 10px;
+  /* margin-top: 10px; */
+  box-shadow: 0px 2px 2px 0px rgba(214, 210, 210, 0.75);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(214, 210, 210, 0.75);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(214, 210, 210, 0.75);
+}
+
+.img-container {
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+.label {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  color: white;
+  background: teal;
+  padding: 0.5rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+.card-info {
+  color: grey;
+  padding-top: 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .two-columns .single-card {
+    padding: 0px;
+    width: 500px;
+    height: 500px;
+  }
+  .two-columns .card-info {
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 30px;
+    font-size: 1.5rem;
+  }
+}

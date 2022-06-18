@@ -1,0 +1,41 @@
+.card-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  max-width: 30em;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .two-columns {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .three-columns {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
+    place-items: center;
+  }
+  .three-columns .label {
+    font-size: 0.6rem;
+  }
+  img {
+    transition: all 0.3s linear;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}

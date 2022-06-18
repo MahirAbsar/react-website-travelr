@@ -47,8 +47,8 @@ img {
 @media screen and (min-width: 800px) {
   .two-columns .single-card {
     padding: 0px;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
   .two-columns .card-info {
     text-align: left;

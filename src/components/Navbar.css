@@ -53,14 +53,24 @@
   color: black;
 }
 .nav-item:last-child {
-  width: 400px;
+  max-width: 300px;
   border-radius: 3px;
   margin: 10px auto 0 auto;
   border: 2px solid white;
 }
 .show-links {
   transform: translate(0);
-  height: 332px;
+  height: 260px;
+}
+
+.nav-header i {
+  font-size: 2rem;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-width: 800px) {

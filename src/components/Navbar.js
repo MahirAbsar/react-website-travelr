@@ -11,7 +11,11 @@ const Navbar = () => {
       <nav className='navbar'>
         <div className='nav-center'>
           <div className='nav-header'>
-            <Link to='/' className='nav-logo'>
+            <Link
+              to='/'
+              onClick={() => setIsLinkOpen(false)}
+              className='nav-logo'
+            >
               TRAVEL<span>R</span>
               <i className='fa-solid fa-splotch'></i>
             </Link>
@@ -27,27 +31,38 @@ const Navbar = () => {
           </div>
           <ul className={`links ${isLinkOpen ? 'show-links' : ''}`}>
             <li className='nav-item'>
-              <Link to='' className='nav-item-link'>
+              <Link
+                to='/'
+                onClick={() => setIsLinkOpen(false)}
+                className='nav-item-link'
+              >
                 Home
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='' className='nav-item-link'>
-                Offers
+              <Link
+                to='/services'
+                onClick={() => setIsLinkOpen(false)}
+                className='nav-item-link'
+              >
+                Services
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='' className='nav-item-link'>
-                Packages
+              <Link
+                to='/products'
+                onClick={() => setIsLinkOpen(false)}
+                className='nav-item-link'
+              >
+                Products
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='' className='nav-item-link'>
-                About Us
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='' className='nav-item-link'>
+              <Link
+                to='/signup'
+                onClick={() => setIsLinkOpen(false)}
+                className='nav-item-link'
+              >
                 Sign Up
               </Link>
             </li>

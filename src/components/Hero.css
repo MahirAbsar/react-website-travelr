@@ -30,6 +30,9 @@ video {
   flex-direction: column;
   gap: 20px 0;
 }
+button {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 800px) {
   .hero-banner h1 {

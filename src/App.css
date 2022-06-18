@@ -21,3 +21,19 @@ a {
   max-width: 1170px;
   margin: 0 auto;
 }
+
+.services {
+  background: url('../public/images/img-6.jpg') center/cover no-repeat;
+  color: white;
+  font-size: 4rem;
+}
+.products {
+  background: url('../public/images/img-7.jpg') center/cover no-repeat;
+  color: white;
+  font-size: 4rem;
+}
+.signup {
+  background: url('../public/images/img-8.jpg') center/cover no-repeat;
+  color: white;
+  font-size: 4rem;
+}
